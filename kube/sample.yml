@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample.example.com
+  labels:
+    app: helloworld
+spec:
+  containers:
+  - name: sample
+    image: sample:1.1
+    ports:
+    - name: sample-port
+      containerPort: 8080

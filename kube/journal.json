@@ -1,0 +1,222 @@
+{
+  "chaoslib-version": "1.7.1",
+  "platform": "Darwin-18.7.0-x86_64-i386-64bit",
+  "node": "C02W20LAHV2V",
+  "experiment": {
+    "version": "1.0.0",
+    "title": "My application is resilient to admin-instigated node drainage",
+    "description": "Can my application maintain its minimum resources?",
+    "tags": [
+      "service",
+      "kubernetes"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Services are all available and healthy",
+      "probes": [
+        {
+          "type": "probe",
+          "name": "application-must-respond-normally",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "url": "http://192.168.64.2:32547/",
+            "timeout": 3
+          }
+        },
+        {
+          "type": "probe",
+          "name": "pods_in_phase",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "chaosk8s.pod.probes",
+            "func": "pods_in_phase",
+            "arguments": {
+              "label_selector": "app=helloworld",
+              "phase": "Running",
+              "ns": "default"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "scale_microservice",
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.actions",
+          "func": "scale_microservice",
+          "arguments": {
+            "name": "sample-servoce",
+            "replicas": 2
+          }
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": false
+  },
+  "start": "2019-11-26T19:22:01.397689",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "application-must-respond-normally",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "url": "http://192.168.64.2:32547/",
+              "timeout": 3
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "Date": "Tue, 26 Nov 2019 19:22:01 GMT",
+              "Content-Type": "text/plain",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Server": "echoserver"
+            },
+            "body": "\n\nHostname: hello-minikube-797f975945-kxqc9\n\nPod Information:\n\t-no pod information available-\n\nServer values:\n\tserver_version=nginx: 1.13.3 - lua: 10008\n\nRequest Information:\n\tclient_address=172.17.0.1\n\tmethod=GET\n\treal path=/\n\tquery=\n\trequest_version=1.1\n\trequest_scheme=http\n\trequest_uri=http://192.168.64.2:8080/\n\nRequest Headers:\n\taccept=*/*\n\taccept-encoding=gzip, deflate\n\tconnection=keep-alive\n\thost=192.168.64.2:32547\n\tuser-agent=python-requests/2.22.0\n\nRequest Body:\n\t-no body in request-\n\n"
+          },
+          "status": "succeeded",
+          "start": "2019-11-26T19:22:01.398655",
+          "end": "2019-11-26T19:22:01.403750",
+          "duration": 0.005095,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "pods_in_phase",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "chaosk8s.pod.probes",
+              "func": "pods_in_phase",
+              "arguments": {
+                "label_selector": "app=helloworld",
+                "phase": "Running",
+                "ns": "default"
+              }
+            }
+          },
+          "output": true,
+          "status": "succeeded",
+          "start": "2019-11-26T19:22:01.404378",
+          "end": "2019-11-26T19:22:01.437146",
+          "duration": 0.032768,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "application-must-respond-normally",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "url": "http://192.168.64.2:32547/",
+              "timeout": 3
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "Date": "Tue, 26 Nov 2019 19:22:01 GMT",
+              "Content-Type": "text/plain",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Server": "echoserver"
+            },
+            "body": "\n\nHostname: hello-minikube-797f975945-kxqc9\n\nPod Information:\n\t-no pod information available-\n\nServer values:\n\tserver_version=nginx: 1.13.3 - lua: 10008\n\nRequest Information:\n\tclient_address=172.17.0.1\n\tmethod=GET\n\treal path=/\n\tquery=\n\trequest_version=1.1\n\trequest_scheme=http\n\trequest_uri=http://192.168.64.2:8080/\n\nRequest Headers:\n\taccept=*/*\n\taccept-encoding=gzip, deflate\n\tconnection=keep-alive\n\thost=192.168.64.2:32547\n\tuser-agent=python-requests/2.22.0\n\nRequest Body:\n\t-no body in request-\n\n"
+          },
+          "status": "succeeded",
+          "start": "2019-11-26T19:22:01.459377",
+          "end": "2019-11-26T19:22:01.463310",
+          "duration": 0.003933,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "pods_in_phase",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "chaosk8s.pod.probes",
+              "func": "pods_in_phase",
+              "arguments": {
+                "label_selector": "app=helloworld",
+                "phase": "Running",
+                "ns": "default"
+              }
+            }
+          },
+          "output": true,
+          "status": "succeeded",
+          "start": "2019-11-26T19:22:01.463930",
+          "end": "2019-11-26T19:22:01.493961",
+          "duration": 0.030031,
+          "tolerance_met": true
+        }
+      ]
+    }
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "scale_microservice",
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.actions",
+          "func": "scale_microservice",
+          "arguments": {
+            "name": "sample-servoce",
+            "replicas": 2
+          }
+        }
+      },
+      "output": null,
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py\", line 119, in scale_microservice\n    v1.patch_namespaced_deployment_scale(name, namespace=ns, body=body)\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/extensions_v1beta1_api.py\", line 4215, in patch_namespaced_deployment_scale\n    (data) = self.patch_namespaced_deployment_scale_with_http_info(name, namespace, body, **kwargs)\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/extensions_v1beta1_api.py\", line 4315, in patch_namespaced_deployment_scale_with_http_info\n    collection_formats=collection_formats)\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py\", line 334, in call_api\n    _return_http_data_only, collection_formats, _preload_content, _request_timeout)\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py\", line 168, in __call_api\n    _request_timeout=_request_timeout)\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py\", line 393, in request\n    body=body)\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py\", line 286, in PATCH\n    body=body)\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py\", line 222, in request\n    raise ApiException(http_resp=r)\n",
+        "kubernetes.client.rest.ApiException: (404)\nReason: Not Found\nHTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 26 Nov 2019 19:22:01 GMT', 'Content-Length': '174'})\nHTTP response body: {\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"the server could not find the requested resource\",\"reason\":\"NotFound\",\"details\":{},\"code\":404}\n\n\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "Traceback (most recent call last):\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py\", line 123, in scale_microservice\n    s=name, r=replicas, e=str(e)))\n",
+        "chaoslib.exceptions.ActivityFailed: failed to scale 'sample-servoce' to 2 replicas: (404)\nReason: Not Found\nHTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 26 Nov 2019 19:22:01 GMT', 'Content-Length': '174'})\nHTTP response body: {\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"the server could not find the requested resource\",\"reason\":\"NotFound\",\"details\":{},\"code\":404}\n\n\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: failed to scale 'sample-servoce' to 2 replicas: (404)\nReason: Not Found\nHTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 26 Nov 2019 19:22:01 GMT', 'Content-Length': '174'})\nHTTP response body: {\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"the server could not find the requested resource\",\"reason\":\"NotFound\",\"details\":{},\"code\":404}\n"
+      ],
+      "start": "2019-11-26T19:22:01.438052",
+      "end": "2019-11-26T19:22:01.457680",
+      "duration": 0.019628
+    }
+  ],
+  "rollbacks": [],
+  "end": "2019-11-26T19:22:01.495080",
+  "duration": 0.10892796516418457
+}

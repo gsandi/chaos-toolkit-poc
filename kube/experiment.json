@@ -1,0 +1,56 @@
+{
+  "chaoslib_version": "1.7.1",
+  "title": "Microservice first test",
+  "description": "First attempt",
+  "id": "73bffdf6-8925-4d47-8a38-4492528db75e",
+  "target": "kubernetes",
+  "date": "2019-11-25T20:42:06.428976Z",
+  "platform": {
+    "system": "Darwin",
+    "node": "C02W20LAHV2V",
+    "release": "18.7.0",
+    "version": "Darwin Kernel Version 18.7.0: Sat Oct 12 00:02:19 PDT 2019; root:xnu-4903.278.12~1/RELEASE_X86_64",
+    "machine": "x86_64",
+    "proc": "i386",
+    "python": "3.7.5"
+  },
+  "extension": {
+    "name": "chaostoolkit-kubernetes",
+    "version": "0.21.0"
+  },
+  "activities": [
+    {
+      "name": "all-our-microservices-should-be-healthy",
+      "type": "probe",
+      "tolerance": true,
+      "provider": {
+        "type": "python",
+        "module": "chaosk8s.probes",
+        "func": "microservice_available_and_healthy",
+        "arguments": {
+          "name": "sample-servoce",
+          "ns": "default"
+        }
+      }
+    },
+    {
+      "type": "action",
+      "name": "terminate-db-pod",
+      "provider": {
+        "type": "python",
+        "module": "chaosk8s.pod.actions",
+        "func": "terminate_pods",
+        "arguments": {
+          "label_selector": "app=helloworld",
+          "name_pattern": "helloworld-[0-9]$",
+          "rand": true,
+          "ns": "default"
+        }
+      },
+      "pauses": {
+        "after": 5
+      }
+    }
+  ],
+  "system": null
+}
