@@ -20,6 +20,8 @@ List of extensions : https://chaostoolkit.org/extensions
 
 Declare an Experiment to Observe the Weakness.
 
+Details : https://docs.chaostoolkit.org/drivers/kubernetes/
+
 **Steady state hypothesis:**
 
 A Chaos Engineering experiment starts and ends with a steady-state hypothesis.
