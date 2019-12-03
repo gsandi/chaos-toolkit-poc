@@ -20,7 +20,7 @@
           "tolerance": 200,
           "provider": {
             "type": "http",
-            "url": "http://192.168.64.6:31422/",
+            "url": "http://192.168.64.6:31497",
             "timeout": 3
           }
         },
@@ -38,6 +38,19 @@
               "ns": "default"
             }
           }
+        },
+        {
+          "name": "count-pods",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "arguments": {
+              "label_selector": "app=sample-app-deployment"
+            },
+            "type": "python",
+            "module": "chaosk8s.pod.probes",
+            "func": "count_pods"
+          }
         }
       ]
     },
@@ -51,7 +64,8 @@
           "func": "kill_microservice",
           "arguments": {
             "name": "app=sample-app-deployment",
-            "ns": "default"
+            "ns": "default",
+            "label_selector": "app=sample-app-deployment"
           }
         }
       }
@@ -59,7 +73,7 @@
     "rollbacks": [],
     "dry": false
   },
-  "start": "2019-12-02T19:27:07.971379",
+  "start": "2019-12-03T15:25:39.588864",
   "status": "completed",
   "deviated": false,
   "steady_states": {
@@ -73,7 +87,7 @@
             "tolerance": 200,
             "provider": {
               "type": "http",
-              "url": "http://192.168.64.6:31422/",
+              "url": "http://192.168.64.6:31497",
               "timeout": 3
             }
           },
@@ -82,14 +96,14 @@
             "headers": {
               "Content-Type": "text/plain;charset=UTF-8",
               "Content-Length": "27",
-              "Date": "Mon, 02 Dec 2019 19:27:08 GMT"
+              "Date": "Tue, 03 Dec 2019 15:25:39 GMT"
             },
             "body": "Greetings from Spring Boot!"
           },
           "status": "succeeded",
-          "start": "2019-12-02T19:27:07.972292",
-          "end": "2019-12-02T19:27:08.006680",
-          "duration": 0.034388,
+          "start": "2019-12-03T15:25:39.590945",
+          "end": "2019-12-03T15:25:39.604191",
+          "duration": 0.013246,
           "tolerance_met": true
         },
         {
@@ -110,9 +124,30 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2019-12-02T19:27:08.007147",
-          "end": "2019-12-02T19:27:08.042615",
-          "duration": 0.035468,
+          "start": "2019-12-03T15:25:39.604510",
+          "end": "2019-12-03T15:25:39.637064",
+          "duration": 0.032554,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "name": "count-pods",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "arguments": {
+                "label_selector": "app=sample-app-deployment"
+              },
+              "type": "python",
+              "module": "chaosk8s.pod.probes",
+              "func": "count_pods"
+            }
+          },
+          "output": 1,
+          "status": "succeeded",
+          "start": "2019-12-03T15:25:39.637627",
+          "end": "2019-12-03T15:25:39.666134",
+          "duration": 0.028507,
           "tolerance_met": true
         }
       ]
@@ -127,7 +162,7 @@
             "tolerance": 200,
             "provider": {
               "type": "http",
-              "url": "http://192.168.64.6:31422/",
+              "url": "http://192.168.64.6:31497",
               "timeout": 3
             }
           },
@@ -136,14 +171,14 @@
             "headers": {
               "Content-Type": "text/plain;charset=UTF-8",
               "Content-Length": "27",
-              "Date": "Mon, 02 Dec 2019 19:27:08 GMT"
+              "Date": "Tue, 03 Dec 2019 15:25:39 GMT"
             },
             "body": "Greetings from Spring Boot!"
           },
           "status": "succeeded",
-          "start": "2019-12-02T19:27:08.075557",
-          "end": "2019-12-02T19:27:08.096443",
-          "duration": 0.020886,
+          "start": "2019-12-03T15:25:39.689277",
+          "end": "2019-12-03T15:25:39.702557",
+          "duration": 0.01328,
           "tolerance_met": true
         },
         {
@@ -164,9 +199,30 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2019-12-02T19:27:08.096893",
-          "end": "2019-12-02T19:27:08.122451",
-          "duration": 0.025558,
+          "start": "2019-12-03T15:25:39.702882",
+          "end": "2019-12-03T15:25:39.721081",
+          "duration": 0.018199,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "name": "count-pods",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "arguments": {
+                "label_selector": "app=sample-app-deployment"
+              },
+              "type": "python",
+              "module": "chaosk8s.pod.probes",
+              "func": "count_pods"
+            }
+          },
+          "output": 1,
+          "status": "succeeded",
+          "start": "2019-12-03T15:25:39.721653",
+          "end": "2019-12-03T15:25:39.738065",
+          "duration": 0.016412,
           "tolerance_met": true
         }
       ]
@@ -183,7 +239,8 @@
           "func": "kill_microservice",
           "arguments": {
             "name": "app=sample-app-deployment",
-            "ns": "default"
+            "ns": "default",
+            "label_selector": "app=sample-app-deployment"
           }
         }
       },
@@ -200,16 +257,16 @@
         "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py\", line 355, in request\n    headers=headers)\n",
         "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py\", line 231, in GET\n    query_params=query_params)\n",
         "  File \"/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py\", line 222, in request\n    raise ApiException(http_resp=r)\n",
-        "kubernetes.client.rest.ApiException: (404)\nReason: Not Found\nHTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 19:27:08 GMT', 'Content-Length': '174'})\nHTTP response body: {\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"the server could not find the requested resource\",\"reason\":\"NotFound\",\"details\":{},\"code\":404}\n\n\n",
+        "kubernetes.client.rest.ApiException: (404)\nReason: Not Found\nHTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 03 Dec 2019 15:25:39 GMT', 'Content-Length': '174'})\nHTTP response body: {\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"the server could not find the requested resource\",\"reason\":\"NotFound\",\"details\":{},\"code\":404}\n\n\n",
         "\nDuring handling of the above exception, another exception occurred:\n\n",
-        "chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)\nReason: Not Found\nHTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 19:27:08 GMT', 'Content-Length': '174'})\nHTTP response body: {\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"the server could not find the requested resource\",\"reason\":\"NotFound\",\"details\":{},\"code\":404}\n"
+        "chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)\nReason: Not Found\nHTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 03 Dec 2019 15:25:39 GMT', 'Content-Length': '174'})\nHTTP response body: {\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"the server could not find the requested resource\",\"reason\":\"NotFound\",\"details\":{},\"code\":404}\n"
       ],
-      "start": "2019-12-02T19:27:08.043584",
-      "end": "2019-12-02T19:27:08.074700",
-      "duration": 0.031116
+      "start": "2019-12-03T15:25:39.666929",
+      "end": "2019-12-03T15:25:39.688464",
+      "duration": 0.021535
     }
   ],
   "rollbacks": [],
-  "end": "2019-12-02T19:27:08.123458",
-  "duration": 0.16382479667663574
+  "end": "2019-12-03T15:25:39.738982",
+  "duration": 0.1814100742340088
 }

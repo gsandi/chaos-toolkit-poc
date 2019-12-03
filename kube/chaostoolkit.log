@@ -5525,3 +5525,1194 @@
 [36m[2019-12-02 13:27:08 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
 [36m[2019-12-02 13:27:08 DEBUG] [__init__:72][39m Cleaning up controls
 [36m[2019-12-02 13:27:08 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:23:15 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-02 15:23:15 DEBUG] [cli:71][39m Running command 'run'
+[36m[2019-12-02 15:23:15 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-02 15:23:16 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/Users/rsharma1/.chaostoolkit/settings.yaml'.
+[36m[2019-12-02 15:23:16 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:23:16 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:23:16 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:23:16 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-02 15:23:16 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2019-12-02 15:23:16 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:23:16 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:23:16 DEBUG] [secret:89][39m Secrets loaded
+[36m[2019-12-02 15:23:16 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2019-12-02 15:23:16 ERROR] [cli:119][39m hypothesis probe must have a tolerance entry
+[36m[2019-12-02 15:23:16 DEBUG] [cli:120][39m hypothesis probe must have a tolerance entry
+[36m[2019-12-02 15:23:46 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-02 15:23:46 DEBUG] [cli:71][39m Running command 'run'
+[36m[2019-12-02 15:23:46 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-02 15:23:46 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/Users/rsharma1/.chaostoolkit/settings.yaml'.
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:23:46 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:23:46 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-02 15:23:46 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2019-12-02 15:23:46 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:23:46 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:23:46 DEBUG] [secret:89][39m Secrets loaded
+[32m[2019-12-02 15:23:46 INFO] [experiment:100][39m Experiment looks valid
+[36m[2019-12-02 15:23:46 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:23:46 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:23:46 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-02 15:23:46 INFO] [experiment:179][39m Running experiment: My application is resilient to admin-instigated node drainage
+[36m[2019-12-02 15:23:46 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:23:46 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:23:46 DEBUG] [secret:89][39m Secrets loaded
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:39][39m Initializing controls
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2019-12-02 15:23:46 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:23:46 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:23:46 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:23:46 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:23:46 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:23:46 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:23:46 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:23:46 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:23:46 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:23:46 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:23:46 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:23:46 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:23:46 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:23:46 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:23:46 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:23:46 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:23:46 INFO] [activity:158][39m Action: stop-service
+[36m[2019-12-02 15:23:46 DEBUG] [python:36][39m Activity 'stop-service' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:23:46 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:23:46 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:23:46 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-02 15:23:46 ERROR] [activity:184][39m   => failed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:23:46 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2019-12-02 15:23:46 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:23:46 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:23:46 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:23:46 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:23:46 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:23:46 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:23:46 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:23:46 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:23:46 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:23:46 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:23:46 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:23:46 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:23:46 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:23:46 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:23:46 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:23:46 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2019-12-02 15:23:46 INFO] [experiment:320][39m Let's rollback...
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:23:46 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:23:46 INFO] [experiment:270][39m Experiment ended with status: completed
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2019-12-02 15:23:46 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2019-12-02 15:23:46 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:25:39 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-02 15:25:39 DEBUG] [cli:71][39m Running command 'run'
+[36m[2019-12-02 15:25:39 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-02 15:25:40 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/Users/rsharma1/.chaostoolkit/settings.yaml'.
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:25:40 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:25:40 DEBUG] [caching:35][39m Cached 5 activities
+[32m[2019-12-02 15:25:40 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2019-12-02 15:25:40 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:25:40 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:25:40 DEBUG] [secret:89][39m Secrets loaded
+[32m[2019-12-02 15:25:40 INFO] [experiment:100][39m Experiment looks valid
+[36m[2019-12-02 15:25:40 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:25:40 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:25:40 DEBUG] [caching:35][39m Cached 5 activities
+[32m[2019-12-02 15:25:40 INFO] [experiment:179][39m Running experiment: My application is resilient to admin-instigated node drainage
+[36m[2019-12-02 15:25:40 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:25:40 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:25:40 DEBUG] [secret:89][39m Secrets loaded
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:39][39m Initializing controls
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2019-12-02 15:25:40 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:25:40 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:25:40 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:25:40 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:25:40 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:25:40 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:25:40 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:25:40 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:25:40 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:25:40 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:25:40 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:25:40 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:25:40 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:25:40 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:25:40 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:25:40 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:25:40 INFO] [activity:158][39m Action: stop-service
+[36m[2019-12-02 15:25:40 DEBUG] [python:36][39m Activity 'stop-service' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:25:40 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:25:40 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:25:40 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-02 15:25:40 ERROR] [activity:184][39m   => failed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:25:40 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:25:40 INFO] [activity:158][39m Action: terminate-pods
+[36m[2019-12-02 15:25:40 DEBUG] [python:36][39m Activity 'terminate-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/actions.py'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:25:40 DEBUG] [actions:71][39m Found 1 pods in ns 'default'
+[36m[2019-12-02 15:25:40 DEBUG] [actions:99][39m Picked pods 'sample-app-deployment-669d676b4f-vhs59' to be terminated
+[36m[2019-12-02 15:25:40 DEBUG] [activity:178][39m   => succeeded without any result value
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2019-12-02 15:25:40 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:25:40 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:25:40 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:25:40 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:25:40 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:25:40 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:25:40 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:25:40 DEBUG] [probes:97][39m Found 2 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:25:40 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py", line 111, in pods_in_phase
+        name=label_selector, s=d.status.phase, p=phase))
+    chaoslib.exceptions.ActivityFailed: pod 'app=sample-app-deployment' is in phase 'Pending' but should be 'Running'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py", line 111, in pods_in_phase
+        name=label_selector, s=d.status.phase, p=phase))
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: pod 'app=sample-app-deployment' is in phase 'Pending' but should be 'Running'
+[31m[2019-12-02 15:25:40 ERROR] [activity:184][39m   => failed: chaoslib.exceptions.ActivityFailed: pod 'app=sample-app-deployment' is in phase 'Pending' but should be 'Running'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[33m[2019-12-02 15:25:40 WARNING] [hypothesis:201][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[2019-12-02 15:25:40 CRITICAL] [experiment:241] Steady state probe 'pods_in_phase' is not in the given tolerance so failing this experiment
+[32m[2019-12-02 15:25:40 INFO] [experiment:320][39m Let's rollback...
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:25:40 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:25:40 INFO] [experiment:270][39m Experiment ended with status: deviated
+[32m[2019-12-02 15:25:40 INFO] [experiment:274][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2019-12-02 15:25:40 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2019-12-02 15:25:40 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:28:14 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-02 15:28:14 DEBUG] [cli:71][39m Running command 'run'
+[36m[2019-12-02 15:28:14 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-02 15:28:14 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/Users/rsharma1/.chaostoolkit/settings.yaml'.
+[36m[2019-12-02 15:28:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:28:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:28:14 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:28:14 DEBUG] [caching:35][39m Cached 5 activities
+[32m[2019-12-02 15:28:14 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2019-12-02 15:28:14 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:28:14 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:28:14 DEBUG] [secret:89][39m Secrets loaded
+[32m[2019-12-02 15:28:14 INFO] [experiment:100][39m Experiment looks valid
+[36m[2019-12-02 15:28:14 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:28:14 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:28:14 DEBUG] [caching:35][39m Cached 5 activities
+[32m[2019-12-02 15:28:14 INFO] [experiment:179][39m Running experiment: My application is resilient to admin-instigated node drainage
+[36m[2019-12-02 15:28:14 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:28:14 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:28:14 DEBUG] [secret:89][39m Secrets loaded
+[36m[2019-12-02 15:28:14 DEBUG] [__init__:39][39m Initializing controls
+[36m[2019-12-02 15:28:14 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2019-12-02 15:28:14 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:28:14 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:28:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:28:14 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:28:15 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:28:15 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:28:15 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:28:15 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:28:15 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:28:15 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:28:15 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:28:15 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:28:15 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:28:15 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:28:15 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:28:15 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:28:15 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:28:15 INFO] [activity:158][39m Action: stop-service
+[36m[2019-12-02 15:28:15 DEBUG] [python:36][39m Activity 'stop-service' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:28:15 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-02 15:28:15 ERROR] [activity:184][39m   => failed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:28:15 INFO] [activity:158][39m Action: scale-microservice
+[36m[2019-12-02 15:28:15 DEBUG] [python:36][39m Activity 'scale-microservice' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:28:15 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 119, in scale_microservice
+        v1.patch_namespaced_deployment_scale(name, namespace=ns, body=body)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/extensions_v1beta1_api.py", line 4215, in patch_namespaced_deployment_scale
+        (data) = self.patch_namespaced_deployment_scale_with_http_info(name, namespace, body, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/extensions_v1beta1_api.py", line 4315, in patch_namespaced_deployment_scale_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 393, in request
+        body=body)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 286, in PATCH
+        body=body)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 123, in scale_microservice
+        s=name, r=replicas, e=str(e)))
+    chaoslib.exceptions.ActivityFailed: failed to scale 'sample-app-deployment' to 2 replicas: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 123, in scale_microservice
+        s=name, r=replicas, e=str(e)))
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: failed to scale 'sample-app-deployment' to 2 replicas: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-02 15:28:15 ERROR] [activity:184][39m   => failed: chaoslib.exceptions.ActivityFailed: failed to scale 'sample-app-deployment' to 2 replicas: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2019-12-02 15:28:15 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:28:15 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:28:15 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:28:15 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:28:15 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:28:15 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:28:15 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:28:15 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:28:15 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:28:15 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:28:15 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:28:15 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:28:15 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:28:15 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:28:15 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:28:15 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2019-12-02 15:28:15 INFO] [experiment:320][39m Let's rollback...
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:28:15 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:28:15 INFO] [experiment:270][39m Experiment ended with status: completed
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2019-12-02 15:28:15 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2019-12-02 15:28:15 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:41:58 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-02 15:41:58 DEBUG] [cli:71][39m Running command 'run'
+[36m[2019-12-02 15:41:58 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-02 15:41:59 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/Users/rsharma1/.chaostoolkit/settings.yaml'.
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:41:59 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:41:59 DEBUG] [caching:35][39m Cached 5 activities
+[32m[2019-12-02 15:41:59 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2019-12-02 15:41:59 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:41:59 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:41:59 DEBUG] [secret:89][39m Secrets loaded
+[32m[2019-12-02 15:41:59 INFO] [experiment:100][39m Experiment looks valid
+[36m[2019-12-02 15:41:59 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:41:59 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:41:59 DEBUG] [caching:35][39m Cached 5 activities
+[32m[2019-12-02 15:41:59 INFO] [experiment:179][39m Running experiment: My application is resilient to admin-instigated node drainage
+[36m[2019-12-02 15:41:59 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:41:59 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:41:59 DEBUG] [secret:89][39m Secrets loaded
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:39][39m Initializing controls
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2019-12-02 15:41:59 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:41:59 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:41:59 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:41:59 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:41:59 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:41:59 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:41:59 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:41:59 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:41:59 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:41:59 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:41:59 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:41:59 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:41:59 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:41:59 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:41:59 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:41:59 INFO] [activity:158][39m Action: stop-service
+[36m[2019-12-02 15:41:59 DEBUG] [python:36][39m Activity 'stop-service' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:41:59 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-02 15:41:59 ERROR] [activity:184][39m   => failed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:41:59 INFO] [activity:158][39m Action: scale-microservice
+[36m[2019-12-02 15:41:59 DEBUG] [python:36][39m Activity 'scale-microservice' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:41:59 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 119, in scale_microservice
+        v1.patch_namespaced_deployment_scale(name, namespace=ns, body=body)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/extensions_v1beta1_api.py", line 4215, in patch_namespaced_deployment_scale
+        (data) = self.patch_namespaced_deployment_scale_with_http_info(name, namespace, body, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/extensions_v1beta1_api.py", line 4315, in patch_namespaced_deployment_scale_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 393, in request
+        body=body)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 286, in PATCH
+        body=body)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 123, in scale_microservice
+        s=name, r=replicas, e=str(e)))
+    chaoslib.exceptions.ActivityFailed: failed to scale 'sample-app-deployment' to 2 replicas: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 123, in scale_microservice
+        s=name, r=replicas, e=str(e)))
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: failed to scale 'sample-app-deployment' to 2 replicas: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-02 15:41:59 ERROR] [activity:184][39m   => failed: chaoslib.exceptions.ActivityFailed: failed to scale 'sample-app-deployment' to 2 replicas: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2019-12-02 15:41:59 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:41:59 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:41:59 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:41:59 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:41:59 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:41:59 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:41:59 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:41:59 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:41:59 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:41:59 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:41:59 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:41:59 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:41:59 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:41:59 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:41:59 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:41:59 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2019-12-02 15:41:59 INFO] [experiment:320][39m Let's rollback...
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:41:59 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:41:59 INFO] [experiment:270][39m Experiment ended with status: completed
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2019-12-02 15:41:59 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2019-12-02 15:41:59 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:44:02 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-02 15:44:02 DEBUG] [cli:71][39m Running command 'run'
+[36m[2019-12-02 15:44:02 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-02 15:44:02 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/Users/rsharma1/.chaostoolkit/settings.yaml'.
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-02 15:44:02 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:44:02 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-02 15:44:02 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2019-12-02 15:44:02 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:44:02 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:44:02 DEBUG] [secret:89][39m Secrets loaded
+[32m[2019-12-02 15:44:02 INFO] [experiment:100][39m Experiment looks valid
+[36m[2019-12-02 15:44:02 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-02 15:44:02 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-02 15:44:02 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-02 15:44:02 INFO] [experiment:179][39m Running experiment: My application is resilient to admin-instigated node drainage
+[36m[2019-12-02 15:44:02 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-02 15:44:02 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-02 15:44:02 DEBUG] [secret:89][39m Secrets loaded
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:39][39m Initializing controls
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2019-12-02 15:44:02 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:44:02 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:44:02 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:44:02 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:44:02 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:44:02 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:44:02 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:44:02 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:44:02 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:44:02 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:44:02 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:44:02 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:44:02 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:44:02 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:44:02 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:44:02 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:44:02 INFO] [activity:158][39m Action: stop-service
+[36m[2019-12-02 15:44:02 DEBUG] [python:36][39m Activity 'stop-service' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:44:02 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:44:02 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:44:02 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-02 15:44:02 ERROR] [activity:184][39m   => failed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Mon, 02 Dec 2019 21:44:02 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2019-12-02 15:44:02 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:44:02 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-02 15:44:02 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Mon, 02 Dec 2019 21:44:02 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:44:02 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:44:02 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-02 15:44:02 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:44:02 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:44:02 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:44:02 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-02 15:44:02 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-02 15:44:02 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-02 15:44:02 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-02 15:44:02 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-02 15:44:02 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-02 15:44:02 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2019-12-02 15:44:02 INFO] [experiment:320][39m Let's rollback...
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:44:02 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-02 15:44:02 INFO] [experiment:270][39m Experiment ended with status: completed
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2019-12-02 15:44:02 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2019-12-02 15:44:02 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-03 09:24:56 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-03 09:24:56 DEBUG] [cli:71][39m Running command 'run'
+[36m[2019-12-03 09:24:56 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-03 09:24:57 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/Users/rsharma1/.chaostoolkit/settings.yaml'.
+[36m[2019-12-03 09:24:57 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-03 09:24:57 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-03 09:24:57 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-03 09:24:57 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-03 09:24:57 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2019-12-03 09:24:57 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-03 09:24:57 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-03 09:24:57 DEBUG] [secret:89][39m Secrets loaded
+[32m[2019-12-03 09:24:57 INFO] [experiment:100][39m Experiment looks valid
+[36m[2019-12-03 09:24:57 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-03 09:24:57 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-03 09:24:57 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-03 09:24:57 INFO] [experiment:179][39m Running experiment: My application is resilient to admin-instigated node drainage
+[36m[2019-12-03 09:24:57 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-03 09:24:57 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-03 09:24:57 DEBUG] [secret:89][39m Secrets loaded
+[36m[2019-12-03 09:24:57 DEBUG] [__init__:39][39m Initializing controls
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2019-12-03 09:24:58 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:24:58 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-03 09:24:58 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Tue, 03 Dec 2019 15:24:58 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:24:58 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:24:58 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-03 09:24:58 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:24:58 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-03 09:24:58 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:24:58 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:24:58 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-03 09:24:58 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:24:58 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-03 09:24:58 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:24:58 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-03 09:24:58 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:24:58 INFO] [activity:158][39m Action: stop-service
+[36m[2019-12-03 09:24:58 DEBUG] [python:36][39m Activity 'stop-service' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:24:58 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 03 Dec 2019 15:24:58 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 03 Dec 2019 15:24:58 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-03 09:24:58 ERROR] [activity:184][39m   => failed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 03 Dec 2019 15:24:58 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2019-12-03 09:24:58 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:24:58 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-03 09:24:58 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Tue, 03 Dec 2019 15:24:58 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:24:58 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:24:58 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-03 09:24:58 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:24:58 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-03 09:24:58 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:24:58 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:24:58 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-03 09:24:58 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:24:58 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-03 09:24:58 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:24:58 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-03 09:24:58 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2019-12-03 09:24:58 INFO] [experiment:320][39m Let's rollback...
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-03 09:24:58 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-03 09:24:58 INFO] [experiment:270][39m Experiment ended with status: completed
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2019-12-03 09:24:58 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2019-12-03 09:24:58 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-03 09:25:38 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-03 09:25:38 DEBUG] [cli:71][39m Running command 'run'
+[36m[2019-12-03 09:25:38 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-03 09:25:38 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/Users/rsharma1/.chaostoolkit/settings.yaml'.
+[36m[2019-12-03 09:25:38 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-03 09:25:38 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2019-12-03 09:25:38 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-03 09:25:38 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-03 09:25:38 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2019-12-03 09:25:38 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-03 09:25:38 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-03 09:25:38 DEBUG] [secret:89][39m Secrets loaded
+[32m[2019-12-03 09:25:39 INFO] [experiment:100][39m Experiment looks valid
+[36m[2019-12-03 09:25:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-03 09:25:39 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-03 09:25:39 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2019-12-03 09:25:39 INFO] [experiment:179][39m Running experiment: My application is resilient to admin-instigated node drainage
+[36m[2019-12-03 09:25:39 DEBUG] [configuration:36][39m Loading configuration...
+[36m[2019-12-03 09:25:39 DEBUG] [secret:74][39m Loading secrets...
+[36m[2019-12-03 09:25:39 DEBUG] [secret:89][39m Secrets loaded
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:39][39m Initializing controls
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2019-12-03 09:25:39 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:25:39 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-03 09:25:39 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Tue, 03 Dec 2019 15:25:39 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:25:39 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:25:39 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-03 09:25:39 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:25:39 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-03 09:25:39 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:25:39 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:25:39 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-03 09:25:39 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:25:39 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-03 09:25:39 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:25:39 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-03 09:25:39 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:25:39 INFO] [activity:158][39m Action: stop-service
+[36m[2019-12-03 09:25:39 DEBUG] [python:36][39m Activity 'stop-service' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:25:39 DEBUG] [activity:230][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 03 Dec 2019 15:25:39 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+    
+    
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/activity.py", line 223, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/usr/local/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/usr/local/lib/python3.7/site-packages/chaosk8s/actions.py", line 57, in kill_microservice
+        ret = v1.list_namespaced_deployment(ns, label_selector=label_selector)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1754, in list_namespaced_deployment
+        (data) = self.list_namespaced_deployment_with_http_info(namespace, **kwargs)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/apis/apps_v1beta1_api.py", line 1854, in list_namespaced_deployment_with_http_info
+        collection_formats=collection_formats)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 334, in call_api
+        _return_http_data_only, collection_formats, _preload_content, _request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 168, in __call_api
+        _request_timeout=_request_timeout)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/api_client.py", line 355, in request
+        headers=headers)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 231, in GET
+        query_params=query_params)
+      File "/usr/local/lib/python3.7/site-packages/kubernetes/client/rest.py", line 222, in request
+        raise ApiException(http_resp=r)
+    chaoslib.exceptions.ActivityFailed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 03 Dec 2019 15:25:39 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[31m[2019-12-03 09:25:39 ERROR] [activity:184][39m   => failed: kubernetes.client.rest.ApiException: (404)
+    Reason: Not Found
+    HTTP response headers: HTTPHeaderDict({'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Tue, 03 Dec 2019 15:25:39 GMT', 'Content-Length': '174'})
+    HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"the server could not find the requested resource","reason":"NotFound","details":{},"code":404}
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2019-12-03 09:25:39 INFO] [hypothesis:184][39m Steady state hypothesis: Services are all available and healthy
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:25:39 INFO] [activity:158][39m Probe: application-must-respond-normally
+[36m[2019-12-03 09:25:39 DEBUG] [activity:176][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '27', 'Date': 'Tue, 03 Dec 2019 15:25:39 GMT'}, 'body': 'Greetings from Spring Boot!'}'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:25:39 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:25:39 INFO] [activity:158][39m Probe: pods_in_phase
+[36m[2019-12-03 09:25:39 DEBUG] [python:36][39m Activity 'pods_in_phase' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:25:39 DEBUG] [probes:97][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-03 09:25:39 DEBUG] [activity:176][39m   => succeeded with 'True'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:25:39 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2019-12-03 09:25:39 INFO] [activity:158][39m Probe: count-pods
+[36m[2019-12-03 09:25:39 DEBUG] [python:36][39m Activity 'count-pods' loaded from '/usr/local/lib/python3.7/site-packages/chaosk8s/pod/probes.py'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:69][39m Using Kubernetes context: minikube
+[36m[2019-12-03 09:25:39 DEBUG] [probes:202][39m Found 1 pods matching label 'app=sample-app-deployment' in ns 'default'
+[36m[2019-12-03 09:25:39 DEBUG] [activity:176][39m   => succeeded with '1'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2019-12-03 09:25:39 DEBUG] [hypothesis:212][39m allowed tolerance is True
+[32m[2019-12-03 09:25:39 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2019-12-03 09:25:39 INFO] [experiment:320][39m Let's rollback...
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-03 09:25:39 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2019-12-03 09:25:39 INFO] [experiment:270][39m Experiment ended with status: completed
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2019-12-03 09:25:39 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2019-12-03 09:25:39 DEBUG] [caching:42][39m Clearing activities cache
