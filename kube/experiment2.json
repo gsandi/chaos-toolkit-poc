@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "title": "My application is resilient to admin-instigated node drainage",
-  "description": "Can my application maintain its minimum resources?",
+  "title": "My application is resilient to admin-instigated api drainage",
+  "description": "Can my micro service maintain its minimum resources?",
   "tags": [
     "service",
     "kubernetes",

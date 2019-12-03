@@ -4,11 +4,14 @@ my experiments with chaos toolkit poc
 ## Introduction to Chaos toolkit
 
 Chaos tool kit practices chaos engineering and discovering how your system reacts following certain conditions you inject. 
+
 By doing this in a controlled fashion, you may learn how to change the system accordingly.
 
 ## Why to use it?
 
-Chaos Engineering is a disciplined approach to identifying failures before they become outages. By proactively testing how a system responds under stress, you can identify and fix failures before they end up in the news.
+Chaos Engineering is a disciplined approach to identifying failures before they become outages. 
+
+By proactively testing how a system responds under stress, you can identify and fix failures before they end up in the news.
 
 Chaos Engineering lets you compare what you think will happen to what actually happens in your systems. You literally “break things on purpose” to learn how to build more resilient systems.
 
