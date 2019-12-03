@@ -6716,3 +6716,8 @@
 [36m[2019-12-03 09:25:39 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
 [36m[2019-12-03 09:25:39 DEBUG] [__init__:72][39m Cleaning up controls
 [36m[2019-12-03 09:25:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2019-12-03 10:56:01 DEBUG] [cli:70][39m ###############################################################################
+[36m[2019-12-03 10:56:01 DEBUG] [cli:71][39m Running command 'report'
+[36m[2019-12-03 10:56:01 DEBUG] [cli:75][39m Using settings file '/Users/rsharma1/.chaostoolkit/settings.yaml'
+[36m[2019-12-03 10:56:01 DEBUG] [caching:25][39m Building activity cache...
+[36m[2019-12-03 10:56:01 DEBUG] [caching:35][39m Cached 4 activities

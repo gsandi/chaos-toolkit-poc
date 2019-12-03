@@ -3,7 +3,8 @@ my experiments with chaos toolkit poc
 
 ## Introduction to Chaos toolkit
 
-Chaos tool kit practices chaos engineering and discovering how your system reacts following certain conditions you inject. By doing this in a controlled fashion, you may learn how to change the system accordingly.
+Chaos tool kit practices chaos engineering and discovering how your system reacts following certain conditions you inject. 
+By doing this in a controlled fashion, you may learn how to change the system accordingly.
 
 ## Why to use it?
 
@@ -21,7 +22,9 @@ Declare an Experiment to Observe the Weakness.
 
 **Steady state hypothesis:**
 
-You can only learn if you know where you start from and what a good baseline for your application is.
+A Chaos Engineering experiment starts and ends with a steady-state hypothesis.
+
+steady-state hypothesis determines where to start from and what a good baseline for your application is.
 
 Here we assume two things:
 
@@ -29,11 +32,50 @@ Here we assume two things:
 * you can invoke your service.
 
 
-**probe:** Hypothesis check.
+**probe:** 
 
-**method:** The method is the block which changes the conditions of our system/application.
+query your system’s state during the steady-state hypothesis
 
-**rollback:** restore to the original state.
+```json
+{
+         "type": "probe",
+         "name": "application-must-respond-normally",
+         "tolerance": 200,
+         "provider": {
+           "type": "http",
+           "url": "http://192.168.64.6:31497",
+           "timeout": 3
+         }
+       },
+ ```
+
+**method:** 
+
+The method is the block which changes the conditions of our system/application.
+
+```json
+"method": [
+    {
+      "type": "action",
+      "name": "stop-service",
+      "provider": {
+        "type": "python",
+        "module": "chaosk8s.actions",
+        "func": "kill_microservice",
+        "arguments": {
+          "name": "app=sample-app-deployment",
+          "ns": "default",
+          "label_selector": "app=sample-app-deployment"
+        }
+      }
+    }
+  ]
+
+```
+
+**rollback:** 
+
+restore system to the original state.
 
 
 ## Creating a deployment:
@@ -49,4 +91,10 @@ Expose the deployment in order to create a service:
 ## Access app URL:
 ```minikube service sample-app-deployment --url```
 
+## Run chaos experiment:
 
+``` chaos run experiment.json```
+
+## Results:
+
+```chaos report --export-format=pdf journal.json report.pdf```
