@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "title": "My application is resilient to admin-instigated api drainage",
+  "description": "Can my micro service maintain its minimum resources?",
+  "tags": [
+    "service",
+    "kubernetes",
+    "spring"
+  ],
+  "steady-state-hypothesis": {
+    "title": "Services are all available and healthy",
+    "probes": [
+      {
+        "type": "probe",
+        "name": "application-must-respond-normally",
+        "tolerance": 200,
+        "provider": {
+          "type": "http",
+          "url": "http://192.168.64.2:31516",
+          "timeout": 3
+        }
+      },
+      {
+        "type": "probe",
+        "name": "pods_in_phase",
+        "tolerance": true,
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.pod.probes",
+          "func": "pods_in_phase",
+          "arguments": {
+            "label_selector": "app=sample-app-deployment",
+            "phase": "Running",
+            "ns": "default"
+          }
+        }
+      },
+      {
+        "name": "count-pods",
+        "type": "probe",
+        "tolerance": 1,
+        "provider": {
+          "arguments": {
+            "label_selector": "app=sample-app-deployment"
+          },
+          "type": "python",
+          "module": "chaosk8s.pod.probes",
+          "func": "count_pods"
+        }
+      }
+    ]
+  },
+  "method": [
+    {
+      "name": "terminate-pods",
+      "type": "action",
+      "tolerance": true,
+      "provider": {
+        "arguments": {
+          "label_selector": "app=sample-app-deployment",
+          "qty": 1
+        },
+        "type": "python",
+        "module": "chaosk8s.pod.actions",
+        "func": "terminate_pods"
+      }
+    }
+  ],
+  "rollbacks": []
+}
