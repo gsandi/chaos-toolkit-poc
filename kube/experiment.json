@@ -1,0 +1,56 @@
+{
+  "chaoslib_version": "1.7.1",
+  "title": "Microservice first test",
+  "description": "First attempt",
+  "id": "73bffdf6-8925-4d47-8a38-4492528db75e",
+  "target": "kubernetes",
+  "date": "2019-11-25T20:42:06.428976Z",
+  "secrets": {
+    "kubernetes": {
+      "KUBERNETES_HOST": "https://aks-1947bd62.hcp.eastus2.azmk8s.io:443",
+      "KUBERNETES_API_KEY": {
+        "type": "env",
+        "key": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUV4ekNDQXErZ0F3SUJBZ0lRZUtOS2dxTDZTTUlQakJ0MzBCRW5yREFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB4T1RFeE1EZ3lNVFF3TXpWYUZ3MDBPVEV3TXpFeU1UVXdNelZhTUEweApDekFKQmdOVkJBTVRBbU5oTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUF1cjFlCnVnTG12czJKNyt0MmtDZzNSQ1ljNkxTRzE5Rlo1OEswb3F2dWIyVlFXTTkweG04Vk5xbkZHN2VZaFJMcEY2NUwKQWhnVzlrMUJqcDFCYlc3Wm83dW9tazNaYmtVN3Mvc3pFd1FRL1RlaDZxY2Z2K0VPdkE4MEVRaUlqQjVuUHk1MAp5R0ZaV0NIYmZCZXI0RHB0aDFuam5TNExWMC8rUjltUzVqTno4SDJ6TEpJa0RscUwrc1NSVjlpWG9jd0lkMUdrCllPQmVSNGJWc2xhc3FES3I3dmplWE1yQVNaTktObHV4ck5JZUk4MUJGTC9BblRzMHhBNUxjZUxKTDF3bWhPZzgKRzRmTmVlbitHclV1UHIxZVJleFBXSnhyVmNuVC8wZThRQ2ZXRTdnZnV4NWlNcW0wdFBiWmE0S1lNdFhvR0o0QgpnQjZQdWc5aXZzWXRPRzhUeThkMCsrSzFGNGRRRXFlNVZBME1nNXcwMjVhVUVNYVB0eEJ3d1RjbWNkbjVBbUVYCjJmVklCQzVZWE1TRGc1Qk8wdG41anR0Z0lHNGp5MjVDQm9RV1NJYTVIQzZuWm01ZGE2QWdTVkJiNGw3YkhRY28KazFiQUROdzJGV1JPMTF5TFBKaXpqeTM0bEcvRE9qSzBEMjVjNzlsM3lobklmbWhUZ2pGd0ErbGcydDMyUTFKVQo2SlRqaExQNURGaElGbk1SK1cvL0dwL21XOXQra0RjbUNEOVVFWVRmRWQvSy9FLytMOGxza3pjeU5hZlpHeVNoCmpDLzVEQXpmNGRzQkdVZ0loUFU1cG1UWE1JdHN6cHBuV1BXYlZ4YVFnME9DNVphckZ5VjJOMGxqcGM4OEwzTnYKMTJiL1dDcUUxRVd4TUlBZWtadmxFN2hPakx5WGtTa3VaNE1hN2UwQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFILwpCQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dJQkFGWEwzWUp3CjBBRFhzN0dvMFFUbjN6WHhmMzBWNnZJbS9IdWlLZkFHSHpQVWxsSGx0TjQ3SnhNV1k3dnRIcDNHSUQrb2Z0ZzUKa1JtQ2pGM1FFYmRybndIOHBiY2xjWDJKdnRWWUJCTWduaFhWL3dMV2RTRUl2WG9GM1c0azVzRUJFOU1mVVdXQQpjeElRVE9LZnFnUjhoK3JlTUlWcUczV0tUNm5RbXhUdXlVbmIvL1NXY0NmUjltSk5yWTBzc1Z0aTBzS3pUdkdFCi93S2hNYnJBTkNUZEluVjBkTkl1bTFkejZHczV4VHpuSC92NGlhRkpjVGFLd00zQzNWNnRnbTdPeUl2aGJ3THoKQnRhTVp4MEZjQzVjamV5YmNnRUFTaGlra05uZ0xUamZKbk56cStKZFA2UTlzZ3o2S0hGUlg2cEJScTVucnFINApsMWljbFBPNmFrNFRoUTlKdzBJYUNmV1p4NkswL05FQktJVzJlendYYWJvaWVuRVIxRVRSU2Qrc2w1OFNWelk5CmxMNlR5OWZTVjJSc3pYcTV4VDVrVlo4R2REMjJqb3RCTWhscURiWmY1Ym13M256VVRIM2xsa05tUEgzMzlycFUKYmQyODZUL0VWblkvS20vcTJEUFJJSGJtc1ExNHJTcWVaa0tieUE2clI0Y0ZqV0NnZEVMcFVDRnM3a1dLY2w5WAp2YjJmVWYyTUVlNVlCM3V1anRLbG90S2lDSk5oSy9WRStNSVpsdithdGRLNFk5ckt4bnpFUGRYUjg4aFRVMHEzCjNkUktDRWFtRjhNQnJJZ0JPQXZ0eWRNR1EwaWtSQ2tTZWYvZHVXMUhzWU5YY3cwL0p2aEhjVE5UbzZDS1RnR3MKczlEYWY2aHlpSHEwTmdwMmRjb2grMVhvWWQyeGRjeDUrOGZFCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+      }
+    }
+  },
+  "extension": {
+    "name": "chaostoolkit-kubernetes",
+    "version": "0.22.0"
+  },
+  "activities": [
+    {
+      "name": "all-our-microservices-should-be-healthy",
+      "type": "probe",
+      "tolerance": true,
+      "provider": {
+        "type": "python",
+        "module": "chaosk8s.probes",
+        "func": "microservice_available_and_healthy",
+        "arguments": {
+          "name": "details",
+          "ns": "default"
+        }
+      }
+    },
+    {
+      "type": "action",
+      "name": "terminate-db-pod",
+      "provider": {
+        "type": "python",
+        "module": "chaosk8s.pod.actions",
+        "func": "terminate_pods",
+        "arguments": {
+          "label_selector": "app=host-service-audit",
+          "name_pattern": "host-service-[0-9]$",
+          "rand": true,
+          "ns": "default"
+        }
+      },
+      "pauses": {
+        "after": 5
+      }
+    }
+  ],
+  "system": null
+}
