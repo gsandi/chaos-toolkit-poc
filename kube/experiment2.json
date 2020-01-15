@@ -9,7 +9,7 @@
   ],
   "secrets": {
     "k8s": {
-      "KUBERNETES_CONTEXT": "~/.kube/config"
+      "KUBERNETES_CONTEXT": "/kube/config"
     }
   },
   "steady-state-hypothesis": {
