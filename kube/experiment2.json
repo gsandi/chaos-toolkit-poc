@@ -7,6 +7,11 @@
     "kubernetes",
     "spring"
   ],
+  "secrets": {
+    "k8s": {
+      "KUBERNETES_CONTEXT": "~/.kube/config"
+    }
+  },
   "steady-state-hypothesis": {
     "title": "Services are all available and healthy",
     "probes": [
@@ -16,7 +21,7 @@
         "tolerance": 200,
         "provider": {
           "type": "http",
-          "url": "http://192.168.64.6:31497",
+          "url": "https://gwv2-nonp.cbrehost.com/",
           "timeout": 3
         }
       },
@@ -29,7 +34,7 @@
           "module": "chaosk8s.pod.probes",
           "func": "pods_in_phase",
           "arguments": {
-            "label_selector": "app=sample-app-deployment",
+            "label_selector": "app=host-service-article",
             "phase": "Running",
             "ns": "default"
           }
@@ -41,7 +46,7 @@
         "tolerance": true,
         "provider": {
           "arguments": {
-            "label_selector": "app=sample-app-deployment"
+            "label_selector": "app=host-service-article"
           },
           "type": "python",
           "module": "chaosk8s.pod.probes",
@@ -59,12 +64,14 @@
         "module": "chaosk8s.actions",
         "func": "kill_microservice",
         "arguments": {
-          "name": "app=sample-app-deployment",
+          "name": "app=host-service-article",
           "ns": "default",
-          "label_selector": "app=sample-app-deployment"
+          "label_selector": "app=host-service-article"
         }
       }
     }
   ],
-  "rollbacks": []
+  "rollbacks": [
+    
+  ]
 }
